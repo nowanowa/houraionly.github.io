@@ -16,6 +16,26 @@
   <title>いめけっと</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
+  <script>
+document.addEventListener('DOMContentLoaded',()=>{
+  document.forms.style.addEventListener('change',()=>{
+    document.body.className = document.forms.style.theme.value;
+  });
+});
+  </script>
+  <style>
+html,body{
+  position:relative;
+}
+body.theme01{
+  background:#eeeeee;
+  color:#000000;
+}
+body.theme02{
+  background:#000000;
+  color:#ffffff;
+}
+  </style>
 </head>
 <body class="theme01">
   <header>
@@ -34,6 +54,10 @@
   <main>
     <section>
       <h2 id="about">開催概要</h2>
+      <p><form name="style"><select name="theme">
+        <option value="theme01">スタイル1</option>
+        <option value="theme02">スタイル2</option>
+      </select></form></p>
       <dl class="">
         <dt>名称</dt>
         <dd>いめけっと</dd>
