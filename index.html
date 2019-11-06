@@ -31,17 +31,67 @@ body.theme01{
   background:#eeeeee;
   color:#000000;
 }
+.theme01 header{
+}
 body.theme02{
   background:#000000;
+  color:#ffb475;
+}
+.theme02 header#main-logo{
+  display:block;
+  float:left;
   color:#ffffff;
+  margin:8px;
+}
+.theme02 nav#main-menu{
+  padding:8px;
+}
+.theme02 nav#main-menu li{
+  display:inline;
+  list-style:none;
+  font-size:small;
+}
+.theme02 nav#main-menu a{
+  color:#dfc575;
+}
+.theme02 section{
+  display:block;
+  width:75%;
+}
+.theme02 section:nth-child(odd){
+  padding-left:25%;
+}
+.theme02 section:nth-child(even){
+  padding-right:25%;
+}
+.theme02 section h2{
+  background:#7f6515;
+  color:#b0efcf;
+  font-size:medium;
+  text-align:center;
+}
+.theme02 section h2:before{
+  content:"【 ";
+}
+.theme02 section h2:after{
+  content:" 】";
+}
+.theme02 footer{
+  display:block;
+  width:100%;
+  color:#ffffff;
+  font-size:small;
+  text-align:center;
+}
+.theme02 footer{
 }
   </style>
 </head>
-<body class="theme01">
-  <header>
+<body class="theme02" id="top">
+  <header id="main-logo">
     <h1>いめけっと</h1>
   </header>
-  <nav>
+  <nav id="main-menu">
     <ul>
       <li><a href="">はじめての方へ</a></li>
       <li><a href="">一般参加案内</a></li>
@@ -56,7 +106,7 @@ body.theme02{
       <h2 id="about">開催概要</h2>
       <p><form name="style"><select name="theme">
         <option value="theme01">スタイル1</option>
-        <option value="theme02">スタイル2</option>
+        <option value="theme02" selected>スタイル2</option>
       </select></form></p>
       <dl class="">
         <dt>名称</dt>
