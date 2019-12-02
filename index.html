@@ -13,7 +13,7 @@
   <meta name="twitter:creater" content="">
   <meta name="twitter:site" content="">
   <!-- IE9以下への対応するんですか -->
-  <title>いめけっと</title>
+  <title>蓬莱カレイドスコオプ</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
   <script>
@@ -27,31 +27,25 @@ document.addEventListener('DOMContentLoaded',()=>{
 html,body{
   position:relative;
 }
-body.theme01{
-  background:#eeeeee;
-  color:#000000;
-}
-.theme01 header{
-}
 body.theme02{
   background:#000000;
   color:#ffb475;
 }
-.theme02 header#main-logo{
+.theme02 header{
   display:block;
   float:left;
   color:#ffffff;
   margin:8px;
 }
-.theme02 nav#main-menu{
+.theme02 nav{
   padding:8px;
 }
-.theme02 nav#main-menu li{
+.theme02 nav li{
   display:inline;
   list-style:none;
   font-size:small;
 }
-.theme02 nav#main-menu a{
+.theme02 nav a{
   color:#dfc575;
 }
 .theme02 section{
@@ -85,11 +79,42 @@ body.theme02{
 }
 .theme02 footer{
 }
+body.theme01{
+  background:#fff9fc;//#fff0f8;
+  color:#000000;
+  max-width:960px;
+  margin:8px auto;
+}
+.theme01 header,.theme01 nav,.theme01 main,.theme01 aside,.theme01 footer{
+  background:#ffffff;
+  box-shadow:4px 4px 8px rgba(0,0,0,0.1);
+  border:1px solid transparent;//#fff0f8;
+  border-radius:4px;
+  margin:1em 0;
+  padding:0 1em;
+  //filter:drop-shadow(0 0 4px rgba(0,0,0,0.1));
+}
+.theme01 h1{
+  color:#890016;
+  font-family:"ＤＦＰ金文体W3";
+  font-weight:normal;
+}
+.theme01 h2{
+  color:#890016;
+  //border-bottom:1px dotted #890016;
+  font-weight:normal;
+  border-radius:4px;
+  box-shadow:4px 4px 8px rgba(0,0,0,0.1);
+  padding:4px;
+}
+.theme01 footer{
+  color:#c6203a; /* 東S-03a #ffcddb */
+}
   </style>
 </head>
-<body class="theme02" id="top">
+<body class="theme01" id="top">
   <header id="main-logo">
-    <h1>いめけっと</h1>
+    <h1>蓬莱カレイドスコオプ</h1>
   </header>
   <nav id="main-menu">
     <ul>
@@ -106,7 +131,7 @@ body.theme02{
       <h2 id="about">開催概要</h2>
       <p><form name="style"><select name="theme">
         <option value="theme01">スタイル1</option>
-        <option value="theme02" selected>スタイル2</option>
+        <option value="theme02">少女繪幻想スタイル</option>
       </select></form></p>
       <dl class="">
         <dt>名称</dt>
