@@ -118,7 +118,7 @@ body.theme03{
 }
 .theme03 main,.theme03 header,.theme03 footer,.theme03 nav.main-menu{
   background:#ffffff;
-  box-shadow:4px 4px 8px rgba(0,0,0,0.1);
+  box-shadow:0px 0px 8px rgba(0,0,0,0.1);
   border:1px solid #faceff;//transparent;
   //border-color:transparent #faceff;
   border-radius:4px;
@@ -133,7 +133,7 @@ body.theme03{
   border-top:3px double transparent;
   font-weight:normal;
   //border-radius:4px;
-  box-shadow:4px 4px 8px rgba(0,0,0,0.1);
+  box-shadow:0px 0px 8px rgba(0,0,0,0.1);
   padding:4px 8px;
 }
 .theme03 nav.main-menu ul{
@@ -150,17 +150,21 @@ body.theme03{
   text-align:center;
 }
 .theme03 nav.main-menu li a{
-  background:#faceff;
-  //border:1px solid white;
-  color:#890016;
+  box-sizing:border-box;
+  width:100%;
+  height:100%;
   display:block;
-  font-weight:bold;
   padding:1em 0;
+  background:#faceff;
+  border:1px solid #faceff;
+  border-radius:4px;
+  color:#890016;
+  //font-weight:bold;
   text-decoration:none;
 }
 .theme03 nav.main-menu li a:hover{
-  background:#890016;
-  color:#ffffff;
+  background:#fff;
+  //color:#ffffff;
 }
 .theme03 nav.sub-menu ul{
   margin:0;
@@ -188,7 +192,7 @@ body.theme04{
       <li><a href=""><i class="material-icons">mail</i></a></li>
       <li><a href=""><i class="material-icons">history</i></a></li>
       <li><a href=""><i class="material-icons">album</i></a></li>
-      <li><a href=""><img src="twitter.png" style="width:1.4em;height:1.4em;"></a></li>
+      <li><a href="https://twitter.com/houraionly" target="_blank" rel="noreferrer noopener"><img src="twitter.png" style="width:1.4em;height:1.4em;"></a></li>
     </ul>
   </nav>
   <header id="main-logo">
