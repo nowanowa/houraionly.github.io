@@ -111,61 +111,84 @@ body.theme01{
 .theme01 footer{
   color:#c6203a; /* 東S-03a #ffcddb */
 }
+
 body.theme03{
   background:linear-gradient(#fff9eb,#ffffff,#f0ffff);
   max-width:960px;
   margin:8px auto;
 }
-.theme03 main,.theme03 header,.theme03 footer,.theme03 nav.main-menu{
+.theme03 main,.theme03 header,.theme03 nav.main-menu{
   background:#ffffff;
-  box-shadow:0px 0px 8px rgba(0,0,0,0.1);
-  border:1px solid #faceff;//transparent;
-  //border-color:transparent #faceff;
+  box-shadow:0 0 8px rgba(0,0,0,0.1);
+  border:1px double #fab0ff;
   border-radius:4px;
-  margin:1em 0;
-  padding:0 1em;
-  //filter:drop-shadow(0 0 4px rgba(0,0,0,0.1));
+  margin:1rem 0;
+  padding:0;
 }
-.theme03 h2{
-  color:#890016;
-  border-bottom:3px double #faceff;
-  border-left:8px solid #890016;
-  border-top:3px double transparent;
-  font-weight:normal;
-  //border-radius:4px;
-  box-shadow:0px 0px 8px rgba(0,0,0,0.1);
-  padding:4px 8px;
+
+.theme03 header{
+  padding:1rem;
+  padding-top:0;
+  border-bottom-width:0;
+  border-radius:4px 4px 0 0 / 4px 4px 0 0;
+  margin-bottom:-8px;
+}
+.theme03 nav.main-menu{
+  margin-top:0;
+  border-radius:0 0 4px 4px / 0 0 4px 4px;
+  border-top-width:0;
 }
 .theme03 nav.main-menu ul{
+  margin:0;
+  padding:1px;
   display:flex;
   justify-content:space-between;
-  margin:0 -1em;
-  padding:1px;
 }
 .theme03 nav.main-menu li{
-  background:#faceff;
-  border:1px solid white;
+  border:1px solid #ffffff;
   flex-basis:25%;
   list-style:none;
   text-align:center;
 }
 .theme03 nav.main-menu li a{
+  display:block;
+  padding:1em 0;
   box-sizing:border-box;
   width:100%;
   height:100%;
-  display:block;
-  padding:1em 0;
   background:#faceff;
-  border:1px solid #faceff;
+  border:1px solid #fab0ff;
+  border-bottom:3px double #890063;
   border-radius:4px;
-  color:#890016;
-  //font-weight:bold;
+  color:#890063;
+  font-weight:bold;
   text-decoration:none;
 }
 .theme03 nav.main-menu li a:hover{
-  background:#fff;
-  //color:#ffffff;
+  background:#ffffff;
+  border-bottom-color:#fc62cd;
+  color:#fc62cd;
 }
+
+
+
+.theme03 main{
+  padding:0 2rem;
+  border-bottom-width:3px;
+}
+.theme03 h2{
+  margin:1rem -1rem;
+  padding:4px 1rem;
+  color:#890063;
+  //font-weight:normal;
+  //border:1px solid #fab0ff;
+  border-bottom:3px double #fc62cd;//#fab0ff;
+  border-left:6px solid #890063;
+  border-top:3px double transparent;
+  border-radius:4px;
+  box-shadow:0px 0px 8px rgba(0,0,0,0.1);
+}
+
 .theme03 nav.sub-menu ul{
   margin:0;
   margin-bottom:-1em;
@@ -173,7 +196,7 @@ body.theme03{
   text-align:right;
 }
 .theme03 nav.sub-menu li{
-  display:inline;
+  display:inline-block;
   list-style:none;
 }
 body.theme04{
