@@ -15,6 +15,7 @@
   <!-- IE9以下への対応するんですか -->
   <title>蓬莱カレイドスコオプ</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="script.js"></script>
   <script>
 document.addEventListener('DOMContentLoaded',()=>{
@@ -110,20 +111,97 @@ body.theme01{
 .theme01 footer{
   color:#c6203a; /* 東S-03a #ffcddb */
 }
-  </style>
+body.theme03{
+  background:linear-gradient(#fff9eb,#ffffff,#f0ffff);
+  max-width:960px;
+  margin:8px auto;
+}
+.theme03 main,.theme03 header,.theme03 footer,.theme03 nav.main-menu{
+  background:#ffffff;
+  box-shadow:4px 4px 8px rgba(0,0,0,0.1);
+  border:1px solid #faceff;//transparent;
+  //border-color:transparent #faceff;
+  border-radius:4px;
+  margin:1em 0;
+  padding:0 1em;
+  //filter:drop-shadow(0 0 4px rgba(0,0,0,0.1));
+}
+.theme03 h2{
+  color:#890016;
+  border-bottom:3px double #faceff;
+  border-left:8px solid #890016;
+  border-top:3px double transparent;
+  font-weight:normal;
+  //border-radius:4px;
+  box-shadow:4px 4px 8px rgba(0,0,0,0.1);
+  padding:4px 8px;
+}
+.theme03 nav.main-menu ul{
+  display:flex;
+  justify-content:space-between;
+  margin:0 -1em;
+  padding:1px;
+}
+.theme03 nav.main-menu li{
+  background:#faceff;
+  border:1px solid white;
+  flex-basis:25%;
+  list-style:none;
+  text-align:center;
+}
+.theme03 nav.main-menu li a{
+  background:#faceff;
+  //border:1px solid white;
+  color:#890016;
+  display:block;
+  font-weight:bold;
+  padding:1em 0;
+  text-decoration:none;
+}
+.theme03 nav.main-menu li a:hover{
+  background:#890016;
+  color:#ffffff;
+}
+.theme03 nav.sub-menu ul{
+  margin:0;
+  margin-bottom:-1em;
+  padding:0;
+  text-align:right;
+}
+.theme03 nav.sub-menu li{
+  display:inline;
+  list-style:none;
+}
+body.theme04{
+  background-image:url('hasu.png');
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:right bottom;
+}
+</style>
 </head>
-<body class="theme01" id="top">
+<body class="theme03" id="top">
+  <nav class="sub-menu">
+    <ul>
+      <li><a href=""><i class="material-icons">info</i></a></li>
+      <li><a href=""><i class="material-icons">help</i></a></li>
+      <li><a href=""><i class="material-icons">mail</i></a></li>
+      <li><a href=""><i class="material-icons">history</i></a></li>
+      <li><a href=""><i class="material-icons">album</i></a></li>
+      <li><a href=""><img src="twitter.png" style="width:1.4em;height:1.4em;"></a></li>
+    </ul>
+  </nav>
   <header id="main-logo">
     <h1>蓬莱カレイドスコオプ</h1>
+    <p align="right">日時：8901年0月16日（花）</p>
+    <p align="right">会場：東山・博麗神社集会室</p>
   </header>
-  <nav id="main-menu">
+  <nav class="main-menu">
     <ul>
-      <li><a href="">はじめての方へ</a></li>
+      <li><a href="">ホーム</a></li>
       <li><a href="">一般参加案内</a></li>
       <li><a href="">サークル参加案内</a></li>
       <li><a href="">コスプレ・撮影案内</a></li>
-      <li><a href="">スタッフ募集</a></li>
-      <li><a href="">霊体参加案内</a></li>
     </ul>
   </nav>
   <main>
@@ -132,6 +210,7 @@ body.theme01{
       <p><form name="style"><select name="theme">
         <option value="theme01">スタイル1</option>
         <option value="theme02">少女繪幻想スタイル</option>
+        <option value="theme03">スタイル3</option>
       </select></form></p>
       <dl class="">
         <dt>名称</dt>
@@ -156,40 +235,13 @@ body.theme01{
       </dl>
       <p><small><a href="">過去のお知らせ</a></small></p>
     </section>
-    <section>
-      <h2 id="twitter">ツイート</h2>
-      <div id="twitterembed" style="width:480px;height:50vh;overflow-y:scroll;">
-        <a class="twitter-timeline" href="https://twitter.com/amasaku_ime?ref_src=twsrc%5Etfw">Tweets by amasaku_ime</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-    </section>
   </main>
-  <aside>
-    <section>
-      <h2 id="subcontents">サブコンテンツ</h2>
-      <ul>
-        <li><a href="">企画案内</a></li>
-        <li><a href="">宅配搬入票</a></li>
-        <li><a href="">タイムスケジュール</a></li>
-        <li><a href="">アーカイブ</a></li>
-      </ul>
-    </section>
-    <section>
-      <h2 id="link">リンク</h2>
-      <ul>
-        <li><a href="https://www16.big.or.jp/~zun/" target="_blank">上海アリス幻樂団 様</a></li>
-        <li><a href="" target="_blank">支援印刷所1 様</a></li>
-        <li><a href="" target="_blank">支援印刷所2 様</a></li>
-        <li><a href="" target="_blank">他イベント1 様</a></li>
-        <li><a href="" target="_blank">他イベント2 様</a></li>
-      </ul>
-    </section>
-  </aside>
   <footer>
     <ul>
-      <li>当イベントは、東方Projectの原作者であるZUN様（上海アリス幻樂団）との直接的な関係はございません。</li>
-      <li>当イベントについてのお問い合わせは<a href="">いめけっと準備会</a>へお願いいたします。</li>
+      <li>東方Projectは<a href="https://www16.big.or.jp/~zun/" target="_blank" rel="noreferrer noopener">上海アリス幻樂団</a>様の作品です。</li>
+      <li>当イベントは、原作者であるZUN様との直接的な関係はございません。</li>
+      <li>当イベントについてのお問い合わせは<a href="">いめけっと準備会</a>へお願いいたします。<a href="">よくある質問</a>もご確認ください。</li>
     </ul>
-    <small>&copy;2020 いめけっと準備会</small>
   </footer>
 </body>
 </html>
