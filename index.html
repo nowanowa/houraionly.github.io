@@ -118,6 +118,11 @@ body.theme03{
   margin:8px auto;
   //font-family:"Yu Mincho";
   //font-size:11pt;
+  background-attachment:fixed;
+  background-image:url('hasu.png');
+  background-position:center bottom;
+  background-repeat:no-repeat;
+  background-size:auto 100%;
 }
 .theme03 main,.theme03 header{
   background:#ffffff;
@@ -141,6 +146,17 @@ body.theme03{
   border-radius:4px;
   margin:1px;
   margin-bottom:-1px;
+}
+.theme03 header h1 img.logo{
+  max-width:100%;
+}
+.theme03 header .timeplace{
+  position:absolute;
+  right:1rem;
+  bottom:1rem;
+  font-size:x-large;
+  font-weight:bold;
+  filter:drop-shadow(0 0 4px #fff);
 }
 .theme03 nav.main-menu{
   margin:0;
@@ -258,6 +274,19 @@ body.theme04{
   background-attachment:fixed;
   background-position:right bottom;
 }
+
+svg{
+  display:inline-block;
+  width:320px;
+  height:auto;
+  overflow:visible;
+}
+text{
+  fill:#000;
+  stroke:#fff;
+  stroke-width:2;
+  strke-linejoin:round;
+}
 </style>
 </head>
 <body class="theme03" id="top">
@@ -272,10 +301,14 @@ body.theme04{
     </ul>
   </nav>
   <header>
-    <div class="main-visual" style="">
-      <h1>蓬莱カレイドスコオプ</h1>
-      <p align="right">日時：8901年0月16日（花）</p>
-      <p align="right">会場：東山・博麗神社集会室</p>
+    <div class="main-visual" style="background-image:url('https://pbs.twimg.com/media/EGsMVJGUcAEikZx?format=jpg&name=large');">
+      <h1><img alt="蓬莱カレイドスコオプ" src="logo.png" class="logo"></h1>
+      <div class="timeplace">
+        <svg viewBox="0 0 320 48">
+          <text x="0" y="50%">日時：8901年0月16日（花）</text>
+          <text x="0" y="100%">会場：東山・博麗神社集会室</text>
+        </svg>
+      </div>
     </div>
     <nav class="main-menu">
       <ul>
@@ -300,7 +333,7 @@ body.theme04{
         <dt>ジャンル</dt>
         <dd></dd>
         <dt>日時</dt>
-        <dd>8901年0月16日（霊） 13:41～3:98</dd>
+        <dd>8901年0月16日（風） 13:41～3:98</dd>
         <dt>会場</dt>
         <dd>博麗神社集会室</dd>
         <dt>募集数</dt>
